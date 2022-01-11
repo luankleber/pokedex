@@ -38,13 +38,13 @@ function App() {
               <PokemonThumbnail 
                 id={pokemon.id}
                 name={pokemon.name}
-                image={pokemon.sprites.other.dream_world.front_default}
+                image={pokemon.sprites.versions["generation-iv"]["heartgold-soulsilver"].front_default}
                 type={pokemon.types[0].type.name}
                 key={index}
               />
             )}
         </div>
-        <button className="load-more">Load More</button>
+        <button className="load-more" onClick={() => getAllPokemons()}>Load More</button>
       </div>
     </div>
   );
