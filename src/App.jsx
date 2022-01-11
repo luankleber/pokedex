@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Button from "./components/Button"
 import PokemonThumbnail from "./components/PokemonThumbnail"
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>PokeDEX</h1>
+      <h1>PokeDEX.</h1>
       <div className="pokemon-container">
         <div className="all-container">
           {allPokemons.map((pokemon, index) => 
@@ -44,7 +45,7 @@ function App() {
               />
             )}
         </div>
-        <button className="load-more" onClick={() => getAllPokemons()}>Load More</button>
+        <Button onClick={getAllPokemons}>LOAD MORE POKÉMON</Button>
       </div>
     </div>
   );
