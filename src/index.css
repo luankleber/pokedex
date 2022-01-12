@@ -147,14 +147,13 @@ code {
 }
 
 .button {
-  background-color: #444;
+  background-color: #78c850;
   height: 40px;
   padding: 0 10px;
-  border-radius: 15px;
   width: 75%;
   font-size: 16px;
   color: #eee;
-  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
   cursor: pointer;
   border: none;
   margin: 50px;
@@ -170,9 +169,7 @@ code {
 h1 {
   color: #111;
   font-family: "Press Start 2P", cursive;
-  font-size: 100;
-  font-weight: bold;
-  line-height: 1;
+  line-height: 1px;
   text-align: center;
 }
 
@@ -181,7 +178,8 @@ h3 {
 }
 
 .thumb-container img {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 15px;
+  image-rendering: pixelated;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PokemonThumbnail = ({id, name, image, type}) => {
+const PokemonThumbnail = ({id, name, image, type,}) => {
     const style = `thumb-container ${type}`
     const type_style = `poke-type type_${type}`  
 
