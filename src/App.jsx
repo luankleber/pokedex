@@ -46,7 +46,7 @@ function App() {
               />
             )}
         </div>
-        <Button onClick={getAllPokemons}>LOAD MORE POKÉMON</Button>
+        <Button onClick={getAllPokemons}>load more pokémon</Button>
       </div>
     </div>
   );
