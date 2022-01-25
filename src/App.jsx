@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import Button from "./components/Button"
 import PokemonThumbnail from "./components/PokemonThumbnail"
 
+
 function App() {
 
   const [allPokemons, setAllPokemons] = useState([])
@@ -39,13 +40,13 @@ function App() {
               <PokemonThumbnail 
                 id={pokemon.id}
                 name={pokemon.name}
-                image={pokemon.sprites.versions["generation-iv"]["heartgold-soulsilver"].front_default}
+                image={pokemon.sprites.versions["generation-v"]["black-white"].animated.front_default}
                 type={pokemon.types[0].type.name}
                 key={index}
               />
             )}
         </div>
-        <Button onClick={getAllPokemons}>LOAD MORE POKÉMON</Button>
+        <Button onClick={getAllPokemons}>load more pokémon</Button>
       </div>
     </div>
   );

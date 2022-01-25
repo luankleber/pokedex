@@ -7,7 +7,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #eee;
+  background: #efefbb;
+  background: -webkit-linear-gradient(to right, #d4d3dd, #efefbb);
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
 }
 
 code {
@@ -44,6 +46,43 @@ code {
 .water {
   background-color: #e0f1fd;
 }
+.ground {
+  background-color: #f1e0b0;
+}
+
+.type_rock {
+  background-color: #a8a878;
+}
+.type_ghost {
+  background-color: #705898;
+}
+.type_electric {
+  background-color: #f8d030;
+}
+.type_bug {
+  background-color: #a8b820;
+}
+.type_poison {
+  background-color: #a040a0;
+}
+.type_normal {
+  background-color: #a8a878;
+}
+.type_fairy {
+  background-color: #ee99ac;
+}
+.type_fire {
+  background-color: #f08030;
+}
+.type_grass {
+  background-color: #78c850;
+}
+.type_water {
+  background-color: #6890f0;
+}
+.type_ground {
+  background-color: #e0c068;
+}
 
 .app-container {
   display: flex;
@@ -76,7 +115,7 @@ code {
   justify-content: center;
   padding: 1.5rem 0;
   margin: 0.3rem;
-  border: 5px solid rgba(0, 0, 0, 0.116);
+  border: 5px solid rgba(0, 0, 0, 0.096);
   border-radius: 0.6rem;
   min-width: 160px;
   text-align: center;
@@ -93,26 +132,54 @@ code {
   margin-top: 1rem;
 }
 
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.poke-type {
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #ffff;
+  padding: 3px 10px;
+}
+
 .button {
-  background-color: #444;
+  background-color: #78c850;
   height: 40px;
   padding: 0 10px;
-  border-radius: 15px;
   width: 75%;
   font-size: 16px;
   color: #eee;
-  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
   cursor: pointer;
   border: none;
   margin: 50px;
 }
 
+.poke-number {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 4px 10px;
+}
+
 h1 {
   color: #111;
   font-family: "Press Start 2P", cursive;
-  font-size: 100;
-  font-weight: bold;
-  /* letter-spacing: 0px; */
-  line-height: 1;
+  line-height: 1px;
   text-align: center;
+}
+
+h3 {
+  margin-bottom: 0.2rem;
+}
+
+.thumb-container img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  image-rendering: pixelated;
 }
